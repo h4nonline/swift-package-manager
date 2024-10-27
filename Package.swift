@@ -912,7 +912,7 @@ func swiftSyntaxDependencies(_ names: [String]) -> [Target.Dependency] {
 }
 
 // Add package dependency on llbuild when not bootstrapping.
-//
+//  https://github.com/facebook/facebook-ios-sdk.
 // When bootstrapping SwiftPM, we can't use llbuild as a package dependency it
 // will provided by whatever build system (SwiftCI, bootstrap script) is driving
 // the build process. So, we only add these dependencies if SwiftPM is being
